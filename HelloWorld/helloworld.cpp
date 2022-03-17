@@ -1,3 +1,9 @@
+// Meu primeiro programa.
+
+/*
+    Programa para imprimir algo na tela.
+*/
+
 #include <iostream>
 
 using namespace std;
