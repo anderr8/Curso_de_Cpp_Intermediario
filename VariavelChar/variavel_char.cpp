@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
 {
     /* code */
 /*
-    char c = 'a'; // caractres tem que ser colocado entre ('')aspas simples.
+    char c = 'a'; // caracteres tem que ser colocado entre ('')aspas simples.
     cout << c;
 */
 
@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
     cout << soma;
 */
 
-    //char c = '''; // Foi interpretado como um caractere de encerramento
+    //char c = '''; // A aspas simples foi interpretada como um caractere de encerramento.
     char c = '\''; // A barra invertida para a esquerda determina que um caractere. 
     cout << c;
 
