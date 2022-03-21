@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
 */
 
     int num = 10;
-    //int num2 = num++;
+    int num2 = num++;
     int num2 = ++num;
 
     cout << num2;
