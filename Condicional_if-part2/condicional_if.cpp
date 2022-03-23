@@ -4,7 +4,6 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 
-/*
 {
     int num = 10;
     if(num > 5){
@@ -14,4 +13,3 @@ int main(int argc, char const *argv[])
     }
     return 0;
 }
-*/
