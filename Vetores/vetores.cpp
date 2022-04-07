@@ -19,11 +19,11 @@ int main(int argc, char const *argv[])
         //int i = 0; i < 4; i++)
         char vetor[5] = {'1', '2', '3', '4', '5'}; // para cada caractere char tem 1 byte.
         
-        cout << "Segundo elemento: " << vetor[1] << endl;
+        //cout << "Segundo elemento: " << vetor[1] << endl;
         cout << sizeof(vetor) << endl; //→ mostra o tamanho do vetor, cada vetor tem 4 bits.
 
 
         //cout << vetor[i] << endl;
-
+    )
     return 0;
 }
