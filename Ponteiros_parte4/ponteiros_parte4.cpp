@@ -4,7 +4,7 @@ using namespace std;
 
 int my_strlen(char * str)
 {
-    /* code */
+    /* Programa para mostrar nome e sobrenome. */
     int tam = 0;
 
     while(*str != '\0'){
