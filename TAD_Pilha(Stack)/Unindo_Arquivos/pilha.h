@@ -1,4 +1,4 @@
-// Colocondo apenas os Protótipos:
+// Protótipos:
 
 #include "pilha.h"
 
