@@ -1,3 +1,5 @@
+// Set => implementa a estrutura conjunto, conjuto é uma estrutura que não contém elementos repetidos.
+
 #include <iostream>
 #include <set>
 using namespace std;
