@@ -1,0 +1,36 @@
+Algoritmo de Kadane (é um algoritmo linear - ele executa em Ó de n (O(n)))
+
+Jay Kadane - 1977
+
+vetor: -2, 5, -1, 2, -3
+
+subvetor: 5, -1, 2
+soma máxima: 6
+
+max_atual = 0, max_total = -1
+
+para i = 0 até i < tam_vet{
+	max_atual = max_total + vet[i]
+	
+	se max_atual < 0
+		max_atual = 0
+		
+	se max_atual > max_total
+		max_total = max_atual
+}
+
+imprima max_total
+
+vetor: -2, 5, -1, 2, -3
+
+max_atual = 0 + (-2) = -2
+max_atual = 0
+max_total = 0
+max_atual = 0 + 5 = 5
+max_total = 5
+max_atual = 5 + (-1) = 4
+max_atual = 4 + 2 = 6
+max_total = 6
+max_atual = 6 + (-3) = 3
+
+imprime = 6
