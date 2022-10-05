@@ -1,0 +1,44 @@
+- Temos 1, 2,..., n elementos
+- O subproblema será encontrar a solução ótima para SK ={elementos 1, 2,..., k}
+
+- Podemos escrever a solução Sn termos dos subproblemas?
+
+- Exemplo:
+	Elemento    Peso    Benefício
+	   1		   2	       3
+        2		   4        5	
+        3          5        8
+        4          3        4
+        5          9       10
+        
+- Capacidade máxima da mochila: 20
+  S4 = {1, 2, 3, 4} - peso total: 14, benefício máximo: 20
+  S5 = {1, 2, 3, 5} - peso total: 20, benefício máximo: 26
+  
+  - Resposta: Não! Justificativa: S4 NÃO é parte da solução S5.
+  
+  - Vamos adicionar um parâmetro: w = Weight = peso em inglês
+  - representa o eso máximo de cada subconjunto de elementos
+  
+  - O subproblema será calcular V[k, w] para encontrar a solução ótima para SK
+  - SK = {elementos 1, 2, ..., k}
+  
+  - Se tormarmos V[i, j]
+  	- i = 0, ..., k - 1
+  	- j = 0, ..., w
+  	- Como derivar V[k, w]?
+  	
+- Fórmula recursiva para os subproblemas:
+	- V[k, w] =
+				V[k - 1, w] se wk > w
+				max{ V[k - 1, w], V[k - 1, w - wk] + bk}
+				
+- O melhor subconjunto SK que tem peso total w:
+	1) O melhor subconjunto S(k-1) que tem um peso total <= w
+	2) O melhor subconjunto S(k-1) que tem um peso total <= w - wk + elemento k
+	
+- O melhor subconjunto SK que tem peso total <= w contém o elemento k ou não
+
+- wk > w > elemento k NÃO pode ser parte da solução porque senão o peso total seria maior do que w
+
+- wk <= w -> elemento k pode fazer parte da solução e escolhemos o caso com maior valor

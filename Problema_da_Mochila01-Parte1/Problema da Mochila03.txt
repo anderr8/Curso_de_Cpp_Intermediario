@@ -1,0 +1,18 @@
+// wt => peso
+// b => beneficío
+
+V[n + 1][w + 1]
+
+para w = 0 até w
+    V[0, w] = 0
+para i = 1 até n
+    V[i, 0] = 0
+
+para i = i 1 até n
+     para w = 1 até w
+        se wt[i - 1] <= w
+            se b[i - 1 + V[i - 1]] > V[i - 1, w]
+                V[i, w] = b[i - 1] + V[i - 1, w - wt[i - 1]]
+            senão
+                V[i, w] = V[i - 1, w] 
+        senãoV[i, w] = V[i - 1, w]

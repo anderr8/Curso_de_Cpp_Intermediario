@@ -1,0 +1,21 @@
+Problema da Mochila 0/1 (Knapsack Problem)
+
+- Elementos - cada elemento possui um valor (v) e um peso (w)
+- Objetivo: maximizar o valor dos elementos colocados na mochila
+- Essa mochila tem uma capacidade máxim: W
+- Exemplo:
+	(peso, valor)
+	elemento 1: (2, 4)
+	elemento 2: (4, 8)
+	elemento 3: (3, 6)
+	
+- Um conjunto S de n elementos.
+- Todo conjunto tem um peso wi e um valor/benefício bi
+
+- Força bruta = fazer todas as combinações: 2^n
+	- se n = 2 = 2^2 = 4 combinações
+	- se n = 4 = 2^4 = 16 combinações
+	- se n = 10 = 2^10 = 1024 combinações 
+	
+- Análise assintótica => análisa o quanto é rápido o algoritmo
+- Análise asssitótica por força bruta: O(2^n)
