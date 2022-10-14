@@ -1,0 +1,23 @@
+Particularmente, no que diz respeito aos jogos, um processador acelerado pode limitar o potencial da placa gráfica, criando o que é conhecido como um estrangulamento. Isto porque o processador gráfico está a correr a uma velocidade superior à que o CPU consegue lidar. Isto tem um impacto no número de frames.
+
+Para desativar, abra o Editor de Registo e navegue para 
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling
+
+. Clique duas vezes na entrada 
+PowerThrottlingOff
+
+, altere os Dados de Valor para 1 e clique em OK.
+
+Desative os bloqueios de rede
+
+Para manter a ligação à Internet estável, o Windows por vezes condiciona a velocidade de rede, o que pode reduzir o desempenho. Para os jogos online, isto pode resultar num maior ping. Então para desativar abra o Editor de Registo e navegue para HKEY_LOCAL_MACHINE > software > Microsoft > Windows NT > CurrentVersion > Multimedia > SystemProfile. Clique duas vezes na entrada NetworkThrottlingIndex, altere os Dados de Valor para ffffffff e clique em OK.
+Dê prioridade aos jogos
+
+O Windows tem um serviço conhecido como Serviço de Programadores de Classe Multimédia (MMCSS). O seu trabalho é garantir que as aplicações multimédia, como jogos, têm um acesso prioritário quando é necessário. E com alguns ajustes de registo no Windows, pode dizer ao MMCSS para dar aos jogos uma prioridade muito maior.
+
+Para isso, inicie o Editor de Registos e navegue para HKEY_LOCAL_MACHINE > software > Microsoft > Windows NT > CurrentVersion > Multimedia > SystemProfile > Tasks > Games. Agora terá de alterar os dados em algumas entradas:
+
+GPU Priority: mude para 8.
+Priority: mude para 6.
+Scheduling Category: mude para High.

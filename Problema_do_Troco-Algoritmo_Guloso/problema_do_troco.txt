@@ -1,0 +1,40 @@
+ Algoritmo Guloso(Greedy Algorithm)
+
+ quantidade de moedas infinitas
+
+ M = {1, 2, 5, 10, 20} (moedas disponíveis)
+ N = 26 (troco)
+
+ Combinações:
+
+ {1, 5, 5, 5, 10} -> 5 moedas
+ {1, 5, 10. 10} -> 4 moedas
+ {1, 5, 20} -> 3 moedas
+
+
+ Solução Ótima:
+
+ Maior = 20
+ N - maior => 26 - 20 = 6
+ maior = 10
+ maior = 5
+ 6 - 5 = 1
+ maior = 2
+ maior = 1
+ 1 - 1 = 0
+
+------------------------------
+
+Não irá ter uma Solução Ótima:
+
+N = 8
+M = {1, 4, 6}
+
+maior = 6
+8 - 6 = 2
+maior = 4
+maior = 1
+2 - 1 = 1
+1 - 1 = 1
+troco: {1, 1, 6} -> total de moedas: 3
+troco: {4, 4} -> total de moedas: 2 
