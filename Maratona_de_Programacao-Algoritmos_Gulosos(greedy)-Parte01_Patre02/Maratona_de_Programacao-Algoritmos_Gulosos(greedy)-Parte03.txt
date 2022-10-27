@@ -1,0 +1,22 @@
+N = 3
+T = 40
+
+Escolha da solução ótima global
+
+toy 1: D = 20, P = 60, div = 3
+toy 2: D = 20, P = 40, div = 2
+toy 3: D = 30, P = 90, div = 3
+
+
+ótima global: toy 2, toy 3 / o brinquedo 2 foi escolhido duas vezes
+tempo_total = 20 + 20 = 40
+resposta: 60 + 40 = 120
+
+Escolha da solução ótima local
+
+toy 1: D = 30, P = 90, div = 3
+toy 2: D = 20, P = 60, div = 3
+toy 3: D = 20, P = 40, div = 2
+
+toy 1 -> tempo_total = 30
+resposta do guloso: 90
