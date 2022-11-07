@@ -1,0 +1,11 @@
+Maior Subsequência comum
+LCS = Longest Common Subsequência
+
+
+s1: abcd
+s2: acd
+LCS (s1, s2) = acd
+
+s1, s2
+c[i,j] = c[i - 1,] + 1 se s1[i] == s2[j]
+senão, c[i, j] = max (c[i, j - 1], c[i - 1, j])
