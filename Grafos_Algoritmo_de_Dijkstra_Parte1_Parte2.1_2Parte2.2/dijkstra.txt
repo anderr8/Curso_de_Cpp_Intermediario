@@ -1,0 +1,10 @@
+Caminho mínimo do vértice 0 ao vértice 4.
+
+Vértice que está sendo expandido: 
+
+Relaxamento:
+
+d[v] + custo(v, u) < d[u] ?
+d[1] + 5 < d[2] ?
+1 + 5 < INFINITO ?
+d[u] = d[v] + custo(v. u) = 6
