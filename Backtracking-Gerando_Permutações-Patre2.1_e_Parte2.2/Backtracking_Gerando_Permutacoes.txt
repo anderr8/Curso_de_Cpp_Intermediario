@@ -1,0 +1,63 @@
+Algoritmo:
+
+funcao permuta(vetor, inf, sup){
+    se (inf == sup)
+        imprime os elementos do vetor
+    senao{
+        para(i = inf; i <= sup; i++){
+            troca(vetor[inf], vetor[i]){
+                troca(vetor[inf], vetor[i])
+                permuta(vetor. inf + 1, sup)
+                troca(vetor[inf;], vetor[i])
+            }
+        }
+    }
+}
+
+vetor = [1, 2, 3]
+
+permuta(vetor, 0, tam_vet -1)
+
+p(0, 2)
+    i = 0
+        troca(0, 0) -> [1, 2, 3]
+        p(1, 2)
+            i = 1
+                troca(1, 1) -> [1, 2, 3]
+                p(2, 2)
+                    imprime -> [1, 2, 3]
+                troca(1, 1) -> [1, 2, 3]
+            i = 2
+                troca(1, 2) -> [1, 2, 3]
+                p(2, 2)
+                    imprime -> [1, 3, 2]
+                troca(1, 2) -> [1, 2, 3]
+        troca(0, 0) -> [1, 2, 3]
+
+    i = 1
+        troca(0, 1) -> [2, 1, 3]
+        p(1, 2)
+            i = 1
+                troca(1, 1) -> [2, 1, 3]
+                p(2, 2)
+                    imprime -> [2, 1, 3]
+                troca(1, 1) -> [2, 1, 3]
+            i = 2
+                troca(1, 2) -> [2, 3, 1]
+                p(2, 2)
+                    imprime -> [2, 3, 1]
+        troca(0, 1) -> [1, 2, 3]
+    i = 2
+        troca(0, 2) -> [3, 2, 1]
+        p(1, 2)
+            i = 1
+                troca(1, 1) -> [3, 2, 1]
+                p(2, 2)
+                    imprime -> [3, 2, 1]
+                troca(1, 1) -> [3, 2, 1]
+            i = 2
+                troca(1, 2) -> [3, 1, 2]
+                p(2, 2)
+                    imprime -> [3, 1, 2]
+                troca(1, 2) -> [3, 2, 1]
+        troca(0, 2) -> [1, 2, 3]
