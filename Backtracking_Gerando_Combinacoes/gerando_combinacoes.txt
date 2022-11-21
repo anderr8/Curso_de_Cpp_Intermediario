@@ -1,0 +1,41 @@
+v -> vetor dos elementos
+tam_v -> tamanho do vetor de elementos
+v_bool -> o elemento está presente?
+i -> índice
+
+v = {1, 2, 3}
+v_bool = {falso, falso, falso}
+
+função comb(i){
+    se(i == tam_v){
+        para(j = 0 até tam_v - 1){
+            se(v_bool[j] == 1)
+                imprima v_bool[j]
+        }
+    }
+    senão{
+        v_bool[i] = verdade
+        comb(i + 1)
+        v_bool{i} = falso
+        comb(i + 1)
+    }
+}
+
+comb(0)
+    (V, F, F)
+    comb(1)
+        (V, V, F)
+        comb(1)
+            (V, V, F)
+            comb(2)
+                (V, V, V)
+                comb(3)
+                    imprime{1, 2, 3}
+                (V, V, F)
+                comb(2)
+                    (V, F, V)
+                comb(3)
+                    imprime{1, 3}
+                (V, F, F)
+                comb(3)
+                    imprime{1}
