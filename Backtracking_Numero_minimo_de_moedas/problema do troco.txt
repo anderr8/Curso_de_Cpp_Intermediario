@@ -1,0 +1,61 @@
+D = {1, 2, 3, 4} // Moedas
+
+
+Código:
+
+função(troco){
+    min_moedas = inf
+
+    se(troco == 0)
+        retorna 0
+
+    para(i = 0 até tamD - 1){
+        se(troco >= D[i]){
+            cont = 1 + função(troco - D[i])
+
+        se(min_moedas > cont)
+            min_moedas = cont
+        }
+    }
+    retorna min_moedas
+}
+
+
+
+D: {1, 2, 4}, troco = 2
+
+f(2)
+    min = Inf // Infinito
+    2 == 0 ? F // Falso
+    i = 0
+        2 >= 1 + ? V // Verdadeiro
+            cont = 1 + f(1)
+            f(1)
+                min = Inf
+                1 == 0 ? f
+                i = 0
+                    1 >= 1 ? V
+                    cont = 1 + f(0) = 1 + 0 = 1
+                    Inf > 1 ? V
+                        min = 1
+                i = 1
+                    1 >= 2 ? F 
+                i = 2
+                    1 >= 4 ? F
+                retorna 1
+            Inf > 2 ? V 
+                min = 2
+    i = 1
+        2 >= 2 ? V 
+            cont = 1 + f(0) = 1
+            2 > 1 ? V
+                min = 1
+    i = 2
+        2 >= ? V 
+            cont = 1 + f(0) = 1
+            2 > 1 ? V 
+                min = 1
+    i = 2
+        2 >= 4 ? F
+        retorna
+
