@@ -1,0 +1,23 @@
+LPS = Longest Palindromic Subsequence 
+LPS = Encontra a mais longa subsequência 
+Palindromo = é possível ler a palavra da esquerda para direita e da direita para a esquerda da mesma forma
+
+Exemplo: ATCATA
+LPS: ATCTA, ATATA, tamanho: 5
+N -> tamanho da nossa string
+Complexidade: 2^N
+
+
+Solução ruim:
+
+s = "ATACTA"
+i = 0
+j = len(s) - 1
+
+se i == j
+    retorna 1
+
+se (s[i] == s[j]) AND (i + 1 == j)
+    retorna lps(s, i, j - 1) + 2
+
+retorna max(lps(s, i, j - 1), lps(s, i + 1, j))
